@@ -2,14 +2,16 @@ require('pry_byebug')
 
 class Game
 
-  def initialize(rock, paper, scissors)
-    @rock = rock
-    @paper = paper
-    @scissors = scissors
+  def rock_beats_scissors
+    return 'Rock WINS!'
   end
 
-  def play
-    if 
+  def scossors_beats_paper
+    return 'Scissors WINS!'
+  end
+
+  def paper_beats_rock
+    return 'Papar WINS!'
   end
 
 end

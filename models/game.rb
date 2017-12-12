@@ -5,19 +5,16 @@ class Game
     @hand2 = hand2
   end
 
-  def rock_beats_scissors
-    if @hand1 = 'rock' && @hand2 = 'scissors'
+  def play
+    if @hand1 == 'rock' && @hand2 == 'scissors'
+      return 'Rock WINS!'
+    elsif @hand1 == 'scissors' && @hand2 == 'paper'
+      return 'Scissors WIN!'
+    elsif @hand1 == 'paper' && @hand2 == 'rock'
       return 'Rock WINS!'
     else
-      nil
+      return 'Draw'
     end
   end
 
-  def scissors_beats_paper
-    if @hand1 = 'scissors' && @hand2 = 'paper'
-      return 'Scossors WIN!'
-    else
-      nil
-    end
-  end
 end

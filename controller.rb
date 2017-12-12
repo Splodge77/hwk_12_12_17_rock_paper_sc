@@ -1,7 +1,7 @@
 require('sinatra')
-require('sinatra/contrib/all')
-require('models/game.rb')
+require('sinatra/contrib/all') if development?
+require_relative('models/game.rb')
 
-get('rock/scissors')
-  return "#{Game.rock_beats_scissors}"
+get('/:hand1/:hand2') do
+  return Game.new(params[:hand1], params[:hand2])
 end

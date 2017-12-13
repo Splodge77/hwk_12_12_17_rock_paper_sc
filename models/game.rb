@@ -11,7 +11,13 @@ class Game
     elsif @hand1 == 'scissors' && @hand2 == 'paper'
       return 'Scissors WIN!'
     elsif @hand1 == 'paper' && @hand2 == 'rock'
+      return 'Paper WINS!'
+    elsif @hand1 == 'scissors' && @hand2 == 'rock'
       return 'Rock WINS!'
+    elsif @hand1 == 'paper' && @hand2 == 'scissors'
+      return 'Scissors WIN!'
+    elsif @hand1 == 'rock' && @hand2 == 'paper'
+      return 'Paper WINS!'
     else
       return 'Draw'
     end
